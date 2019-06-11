@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+/* INICIO ESTILO INDEX */
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar {
+        background: #8F141B !important;
+    }
+
+    .navbar-brand {
+        font-family: 'Satisfy', cursive;
+    }
+
+    .nav-link,
+    .navbar-brand {
+        color: #FFF;
+    }
+
+    .nav-link:hover {
+        color: #000;
+    }
+
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+
+/* Junbotrón. */
+
+    .display-3,
+    .pb-4 {
+        color: #FFF;
+    }
+
+    .btn-primary {
+        background-color: #8F141B;
+            border-color: #8F141B;
+    }
+
+    .navbar-brand {
+            color:white;
+            font-family: 'Satisfy', cursive;
+    }
+
+    /* Footer */
+
+    /* Cards */
+    .card {
+        display: block;
+        margin-bottom: 20px;
+        line-height: 1.42857143;
+        background-color: #fff;
+        border-radius: 2px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        transition: box-shadow .25s;
+    }
+    .card:hover {
+        box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: transform .2s;
+    transform: scale(1.1);
+    }
+    .card-img-top {
+        width: 100%;
+        height:200px;
+        border-top-left-radius:2px;
+        border-top-right-radius:2px;
+        display:block;
+        overflow: hidden;
+    }
+    .card-img-top img{
+        width: 100%;
+        height: 200px;
+        object-fit:cover;
+        transition: all .25s ease;
+    }
+    .card-body {
+        padding:15px;
+        text-align:left;
+    }
+    .card-title {
+        margin-top:0px;
+        font-weight: 700;
+        font-size: 1.65em;
+    }   
+    .card-title a {
+        color: #000;
+        text-decoration: none !important;
+    }
+    .card-read-more {
+        border-top: 1px solid #D4D4D4;
+    }
+    .card-read-more a {
+        text-decoration: none !important;
+        padding:10px;
+        font-weight:600;
+        text-transform: uppercase
+    }
+
+
+/* El formulario viene aquí */
+/* Style the form */
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+/* Aquí vienen los estilos de los checkboxes de las imágenes */
+.image-checkbox {
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    border: 4px solid transparent;
+                    margin-bottom: 0;
+                    outline: 0;
+                }
+                .image-checkbox input[type="checkbox"] {
+                    display: none;
+                }
+    
+                .image-checkbox-checked {
+                    border-color: #4783B0;
+                }
+                .image-checkbox .fa {
+                    position: absolute;
+                    color: #4A79A3;
+                    background-color: #fff;
+                    padding: 10px;
+                    top: 0;
+                    right: 0;
+                }
+                .image-checkbox-checked .fa {
+                    display: block !important;
+                }
+
+
+        @media only screen and (min-width: 600px) {
+/* El index viene aquí. */
+    .jumbotron {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("../style/bg-main.jpg") no-repeat center;
+        background-size: cover;
+    }
+/* El login viene aquí. */
+    .login-purple-pink {
+        background: linear-gradient(145deg, #3F51B5, #E91E63);
+    }
+}
